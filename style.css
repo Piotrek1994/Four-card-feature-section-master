@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	height: 100vh;
+	background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: 200;
+    
+}
+
+.description {
+    text-align: center;
+    width: 30rem;
+    font-size: 15px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+
+.cards {
+    width: 70rem;
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(145, 68, 68, 0.441);
+}
+
