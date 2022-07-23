@@ -30,20 +30,22 @@ body {
 
 
 .cards {
-    width: 80rem;
-    height: 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     
+    display: grid;
     
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+   
+    grid-template-rows: 7.5rem 7.5rem 7.5rem 7.5rem;
+      
 }
+
 .card {
-    display: flex;
-    flex-direction: column;
     width: 19rem;
     height: 15rem;
     padding: 1.8rem;
+
     overflow: hidden;
     background-color: white;
     border-radius: 0.4rem;
@@ -79,6 +81,7 @@ body {
 }
 
 .card-headline {
+    margin-bottom: 0.8rem;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -86,6 +89,7 @@ body {
 .card-description {
     font-size: 12px;
     font-weight: 200;
+    color: hsl(229, 6%, 66%);
 }
 
 .card-red .card-img, .card-yellow .card-img, .card-green .card-img, .card-blue .card-img {
@@ -93,8 +97,37 @@ body {
     height: 3.7rem;
     margin-left: auto;
     margin-top: auto;
-    background-image: url(./images/icon-team-builder.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.card-red .card-img {
+    background-image: url(./images/icon-team-builder.svg);
+}
+.card-blue .card-img {
+    background-image: url(./images/icon-calculator.svg);
+}
+.card-yellow .card-img {
+    background-image: url(./images/icon-karma.svg);
+}
+.card-green .card-img {
+    background-image: url(./images/icon-supervisor.svg);
+}
+
+.card-red {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.card-yellow {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+.card-blue {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.card-green {
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
