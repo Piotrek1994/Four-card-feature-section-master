@@ -5,96 +5,116 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	height: 100vh;
 	background-color: hsl(0, 0%, 98%);
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .headline {
-    font-size: 32px;
-    font-weight: 200;
-    
+	font-size: 32px;
+	font-weight: 200;
 }
 
 .description {
-    text-align: center;
-    width: 30rem;
-    font-size: 15px;
-    font-weight: 200;
-    color: hsl(229, 6%, 66%);
+	text-align: center;
+	width: 30rem;
+	font-size: 15px;
+	font-weight: 200;
+	color: hsl(229, 6%, 66%);
 }
 
-
 .cards {
-    
-    display: grid;
-    
-    column-gap: 2rem;
-    row-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr ;
-   
-    grid-template-rows: 7.5rem 7.5rem 7.5rem 7.5rem;
-      
+    width: 80rem;
+    height: 40rem;
+	display: grid;
+	column-gap: 2rem;
+	row-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 7.5rem 7.5rem 7.5rem 7.5rem;
+}
+
+.card-red {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.card-yellow {
+	grid-column: 2/3;
+	grid-row: 3/5;
+}
+.card-blue {
+	grid-column: 3/4;
+	grid-row: 2/4;
+}
+.card-green {
+	grid-column: 1/2;
+	grid-row: 2/4;
 }
 
 .card {
-    width: 19rem;
-    height: 15rem;
-    padding: 1.8rem;
-
-    overflow: hidden;
-    background-color: white;
-    border-radius: 0.4rem;
-    box-shadow: 8px 8px 24px -20px rgba(66, 68, 90, 1);
+    display: flex;
+    flex-direction: column;
+	width: 19rem;
+	height: 15rem;
+	padding: 1.8rem;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 0.4rem;
+	box-shadow: 8px 8px 24px -20px rgba(66, 68, 90, 1);
 }
 
-
-.card-red, .card-green, .card-blue, .card-yellow {
-    position: relative;
+.card-red,
+.card-green,
+.card-blue,
+.card-yellow {
+	position: relative;
 }
 
-.card-red::before, .card-green::before, .card-blue::before, .card-yellow::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
+.card-red::before,
+.card-green::before,
+.card-blue::before,
+.card-yellow::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	width: 100%;
 }
 
 .card-red::before {
-    background-color: hsl(0, 78%, 62%);
+	background-color: hsl(0, 78%, 62%);
 }
 .card-green::before {
-    background-color: hsl(180, 62%, 55%);
+	background-color: hsl(180, 62%, 55%);
 }
 .card-yellow::before {
-    background-color: hsl(34, 97%, 64%);
+	background-color: hsl(34, 97%, 64%);
 }
 .card-blue::before {
-    background-color: hsl(212, 86%, 64%);
+	background-color: hsl(212, 86%, 64%);
 }
 
 .card-headline {
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+	margin-bottom: 0.8rem;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 .card-description {
-    font-size: 12px;
-    font-weight: 200;
-    color: hsl(229, 6%, 66%);
+	font-size: 12px;
+	font-weight: 200;
+	color: hsl(229, 6%, 66%);
 }
 
-.card-red .card-img, .card-yellow .card-img, .card-green .card-img, .card-blue .card-img {
-    width: 3.7rem;
+.card-img  {
+	width: 3.7rem;
     height: 3.7rem;
+    display: block;
     margin-left: auto;
     margin-top: auto;
     background-repeat: no-repeat;
@@ -102,32 +122,13 @@ body {
     background-size: cover;
 }
 
-.card-red .card-img {
-    background-image: url(./images/icon-team-builder.svg);
-}
-.card-blue .card-img {
-    background-image: url(./images/icon-calculator.svg);
-}
-.card-yellow .card-img {
-    background-image: url(./images/icon-karma.svg);
-}
-.card-green .card-img {
-    background-image: url(./images/icon-supervisor.svg);
-}
-
-.card-red {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.card-yellow {
-    grid-column: 2/3;
-    grid-row: 3/5;
-}
-.card-blue {
-    grid-column: 3/4;
-    grid-row: 2/4;
-}
-.card-green {
-    grid-column: 1/2;
-    grid-row: 2/4;
+img {
+    width: 3.7rem;
+    height: 3.7rem;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
