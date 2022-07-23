@@ -134,7 +134,9 @@ img {
 	background-size: cover;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 655px) {
+
+
 	.headlines {
 		text-align: center;
         font-size: 0.7rem;
@@ -145,6 +147,10 @@ img {
 
     .description {
         width: 18rem;
+    }
+
+    .cards {
+        grid-template-rows: 1fr;
     }
 
 	.card-green {
@@ -168,3 +174,35 @@ img {
 		display: none;
 	}
 }
+
+@media (min-width: 656px) and (max-width: 1000px){
+
+    .cards {
+        height: 33rem;
+        grid-template-rows: 1fr;
+        row-gap: 0.1rem;
+    }
+
+	.card-green {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.card-red {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.card-yellow {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.card-blue {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+    footer {
+		display: none;
+	}
+
+}
+
