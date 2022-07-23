@@ -88,11 +88,11 @@ body {
     font-weight: 200;
 }
 
-.card-red .card-img {
+.card-red .card-img, .card-yellow .card-img, .card-green .card-img, .card-blue .card-img {
     width: 3.7rem;
     height: 3.7rem;
-    display: block;
-    bottom: 0;
+    margin-left: auto;
+    margin-top: auto;
     background-image: url(./images/icon-team-builder.svg);
     background-repeat: no-repeat;
     background-position: center;
