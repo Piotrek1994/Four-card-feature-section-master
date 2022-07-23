@@ -40,11 +40,10 @@ body {
 }
 .card {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     width: 19rem;
     height: 15rem;
-    padding: 2rem;
+    padding: 1.8rem;
     overflow: hidden;
     background-color: white;
     border-radius: 0.4rem;
@@ -52,11 +51,11 @@ body {
 }
 
 
-.card-red {
+.card-red, .card-green, .card-blue, .card-yellow {
     position: relative;
 }
 
-.card-red::before {
+.card-red::before, .card-green::before, .card-blue::before, .card-yellow::before {
     content: '';
     display: block;
     position: absolute;
@@ -64,6 +63,38 @@ body {
     left: 0;
     height: 4px;
     width: 100%;
-    background-color: red;
 }
 
+.card-red::before {
+    background-color: hsl(0, 78%, 62%);
+}
+.card-green::before {
+    background-color: hsl(180, 62%, 55%);
+}
+.card-yellow::before {
+    background-color: hsl(34, 97%, 64%);
+}
+.card-blue::before {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card-headline {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.card-red .card-img {
+    width: 3.7rem;
+    height: 3.7rem;
+    display: block;
+    bottom: 0;
+    background-image: url(./images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
