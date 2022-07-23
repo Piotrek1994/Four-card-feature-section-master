@@ -15,20 +15,21 @@ body {
 }
 
 .headline {
+    margin-top: 5rem;
 	font-size: 32px;
 	font-weight: 200;
 }
 
 .description {
+    width: 30rem;
+    margin: 1rem 0 4rem 0;
 	text-align: center;
-	width: 30rem;
 	font-size: 15px;
 	font-weight: 200;
 	color: hsl(229, 6%, 66%);
 }
 
 .cards {
-    width: 80rem;
     height: 40rem;
 	display: grid;
 	column-gap: 2rem;
